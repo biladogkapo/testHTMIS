@@ -60,12 +60,11 @@
             "VisitID": "fad25fba-bf95-4096-a311-e53c21358e9b",
             "VisitStatus": "Cancelled",
             "VisitDate": 2018,
-            "Remarks": "Needs Wheel alignment",
+            "Remarks": "Needs Wheel alignment"
         },
         "Queue": {
             "QueueID": "ee8bea04-1b5d-4f3d-a657-000f1190fd03",
-            "QueueNo": 46,
-        }
+            "QueueNo": 46,        }
     }
 ]
 }
