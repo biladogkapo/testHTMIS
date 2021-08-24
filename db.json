@@ -1,92 +1,209 @@
 {
-  "DoctorWorklist" : [
+  "SyncDownloadDataByLastSyncDate": [
     {
-        "WorkItemID": "730a422e-f2c4-41e1-ac17-57419041f806",
-        "TaskDate": "2021-06-29T18:38:00.55",
-        "PatientProfile": {
-            "PatientProfileID": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
-            "PatientReferenceNo": "A07149",
-            "PatientAccountNo": "S1805492B",
-            "PatientAccountNoTypeFK": "00000000-0000-0000-0000-000000000000",
-            "RecordClinicFK": null,
-            "SalutationFK": "00000000-0000-0000-0000-000000000000",
-            "Name": "CHAS KAEL ",
-            "CallingName": null,
-            "ReferralCompanyFK": "00000000-0000-0000-0000-000000000000",
-            "DOB": "1980-03-06T00:00:00",
-            "GenderFK": "00000000-0000-0000-0000-000000000000",
-            "RaceFK": "00000000-0000-0000-0000-000000000000",
-            "LanguageFK": "00000000-0000-0000-0000-000000000000",
-            "Dialect": null,
-            "MaritalStatusFK": "00000000-0000-0000-0000-000000000000",
-            "ReligionFK": "00000000-0000-0000-0000-000000000000",
-            "ResidentStatusFK": "00000000-0000-0000-0000-000000000000",
-            "NationalityFK": "00000000-0000-0000-0000-000000000000",
-            "PhotoFileFK": "00000000-0000-0000-0000-000000000000",
-            "G6PDFK": "00000000-0000-0000-0000-000000000000",
-            "IsDeceased": false,
-            "IsInactive": false,
-            "CountryOriginFK": "00000000-0000-0000-0000-000000000000",
-            "DateOfDeath": null,
-            "CauseOfDeath": null,
-            "OccupationFK": "00000000-0000-0000-0000-000000000000",
-            "IsPCNPatient": false,
-            "PatientReferralSourceFK": "00000000-0000-0000-0000-000000000000",
-            "RightSitingReferralSourceFK": "00000000-0000-0000-0000-000000000000",
-            "EmailAddress": null,
-            "SpecialRemarks": null,
-            "CreateDate": "0001-01-01T00:00:00",
-            "CreateByLoginFK": "00000000-0000-0000-0000-000000000000",
-            "CreateByUserFK": "00000000-0000-0000-0000-000000000000",
-            "CreateByClinicFK": "C1",
-            "UpdateDate": "0001-01-01T00:00:00",
-            "UpdateByLoginFK": "00000000-0000-0000-0000-000000000000",
-            "UpdateByUserFK": "00000000-0000-0000-0000-000000000000",
-            "UpdateByClinicFK": "C1",
-            "IsAllergyNIL": false,
-            "IsSignificantPatient": false,
-            "PreferredContactMode": "00000000-0000-0000-0000-000000000000",
-            "IsMedicalAlertNIL": false,
-            "IsFromCMIS": false,
-            "ConfirmationType": null,
-            "SubmissionErrorCode": null,
-            "SubmissionErrorDescription": null,
-            "FamilyHistoryRemarks": null,
-            "LocationFK": "00000000-0000-0000-0000-000000000000",
-            "IsDeleted": false,
-            "IsAbsorbGSTByDefault": false
-        },
-        "Visit": {
-            "VisitID": "41e0e93f-86e6-4095-8c2d-b07f5c974e7d",
-            "VisitDate": "2021-06-29T18:38:00.303",
-            "Remarks": "",
-            "VisitStatus": "Waiting"
-        },
-        "Location": {
-            "LocationID": "00000000-0000-0000-0000-000000000000",
-            "Code": "M"
-        },
-        "Queue": {
-            "QueueID": "da42cb91-d15f-4fcc-b808-297d7f2cf1b6",
-            "QueueNo": "76.0"
-        },
-        "Diagnosis": {
-            "DocNoteDiagnosisID": "00000000-0000-0000-0000-000000000000",
-            "DiagnosisFK": "00000000-0000-0000-0000-000000000000",
-            "DoctorNoteFK": "00000000-0000-0000-0000-000000000000",
-            "DiagnosisEditable": "",
-            "OnsetDate": null,
-            "IsPersist": false,
-            "IsCurrent": false,
-            "Remarks": null,
-            "ClinicalObjectRecordFK": "00000000-0000-0000-0000-000000000000",
-            "IsDeleted": false,
-            "DiagnosisFilterOption": null,
-            "Sequence": 0,
-            "OrderByStationFK": "00000000-0000-0000-0000-000000000000",
-            "OrderModifiedByStationFK": "00000000-0000-0000-0000-000000000000",
-            "OrderByClinicianFK": "00000000-0000-0000-0000-000000000000",
-            "OrderModifiedByClinicianFK": "00000000-0000-0000-0000-000000000000"
+      "PatientProfileID": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+      "Name": "Patient B Sarah",
+      "DOB": "1993-12-05T00:00:00",
+      "Language": "English",
+      "Race": "Filipino",
+      "MaritalStatus": "Single",
+      "Religion": "Catholic",
+      "Residentstatus": "Singapore Permanent Resident",
+      "Nationality": "Filipino",
+      "Country": "Philippines",
+      "Gender": "M",
+      "PatientReferralSource": "Self",
+      "RightSittingReferralSource": "Polyclinic",
+      "EmailAddress": "test@gmail",
+      "ContactNumber": "128376123",
+      "MRN": "A00313",
+      "NRIC": "G698001F",
+      "IDType": "FIN/WP/11B",
+      "PatientRemarks": "Test Patient Remarks",
+      "DoctorRemarks": "Test Doctor Remarks",
+      "FamilyHistory": [
+        {
+          "PatientFamilyHistoryID": "1E9902D2-F9BB-422A-98C1-0012A862B9FE",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "Name": "Chloe Lee",
+          "Relationship": "Cousin",
+          "Description": "Diabetes",
+          "Age": "35"
         }
+      ],
+      "SocialHistory": [
+        {
+          "PatientSocialHistoryID": "5E442B64-C594-49D8-BF3F-003193ED857D",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "Use": "No",
+          "Smoking": "Yes",
+          "CessationAdv": "0",
+          "Remarks": "2",
+          "OtherRemarks": "TEST"
+        }
+      ],
+      "PatientAllergy": [
+        {
+          "PatientAllergyID": "D29E4291-7E1F-4B0F-A207-002B8FBA344D",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "AllergyName": "AMOXIL",
+          "Reaction": "DrugAllergy",
+          "AdverseReaction": "Headache",
+          "OnsetDate": "2018-10-17 00:00:00.000",
+          "Status": "Active"
+        }
+      ],
+      "NextOfKin": [
+        {
+          "NextOfKinID": "3F51F323-AAFB-497E-BFEE-000A78DF0BBA",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "Name": "Chen Yanmei Liang",
+          "IDType": "SG Pink NRIC",
+          "NRIC": "S8298763D",
+          "Age": "16"
+        }
+      ],
+      "EResult": [
+        {
+          "EResultID": "C715C259-ABE1-44AD-B5B2-02079C07A2AE",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "LabResult": "Blood Test",
+          "DateOfRequest": "2021-07-08T11:13:13.03",
+          "DateOfReport": "2021-07-08T11:13:13.03",
+          "OrderedBy": "Dr Ang Kian Chuan",
+          "LabStatus": "Acknowledged",
+          "SpecimenDate": "2021-07-08T11:13:13.03",
+          "SpecimenColDate": "2021-07-08T11:13:13.03",
+          "ReportedBy": "Dr Shum Yueh Siew",
+          "ItemLabResult": [
+            {
+              "LabResultPanelItemID": "2821903A-1127-44EF-8778-00021BA5E7AD",
+              "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+              "LabResultFK": "C715C259-ABE1-44AD-B5B2-02079C07A2AE",
+              "Item": "2Hr Glucose - Post Dose (mmol/L)",
+              "Result": 15.33,
+              "RefRange": "0-125",
+              "SpecimenStatus": "Final"
+            }
+          ]
+        }
+      ],
+      "FlowSheet": [
+        {
+          "TestResultID": "6BC19A1D-B3C4-4E00-9B48-EB87A80E2A92",
+          "ObstermID": "00000000-0000-0000-0000-000000000004",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "ItemUnit": "Temperature - Degree Celsius",
+          "ItemUnitValue": "100.000",
+          "ResultTime": "2020-04-28 08:06:34.307"
+        },
+        {
+          "TestResultID": "9695FB76-7421-4EA7-842F-FE7DD0CD7B4F",
+          "ObstermID": "00000000-0000-0000-0000-000000000004",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "ItemUnit": "Temperature - Degree Celsius",
+          "ItemUnitValue": "222.000",
+          "ResultTime": "2020-04-28 08:06:34.307"
+        },
+        {
+          "TestResultID": "4422E21D-35EC-484D-BD76-4EB86255CA5B",
+          "ObstermID": "00000000-0000-0000-0000-000000000003",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "ItemUnit": "Blood Pressure Systolic (mmHg)",
+          "ItemUnitValue": "123.000",
+          "ResultTime": "2020-04-28 08:06:34.307"
+        },
+        {
+          "TestResultID": "FA622572-207F-47DB-9D12-6D54F8472462",
+          "ObstermID": "00000000-0000-0000-0000-000000000003",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "ItemUnit": "Blood Pressure Systolic (mmHg)",
+          "ItemUnitValue": "221.000",
+          "ResultTime": "2020-04-28 08:06:34.307"
+        }
+      ],
+      "Visit": [
+        {
+          "VisitID": "5e95da8b-51e8-4050-a9f8-3d25fb094a5b",
+          "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+          "Room": "KAMSAHAMNIDA-001",
+          "VisitDate": "2021-07-08T11:13:13.03",
+          "Remarks": "test",
+          "VisitStatus": "Waiting",
+          "Doctor": "Chong Wai Keong bin Tan User",
+          "HeightCM": "99.00",
+          "WeightKG": "99.00",
+          "BMI": "101.01",
+          "TemperatureC": "99.00",
+          "PulseRateBPM": "99.00",
+          "BPSysMMHG": "99.00",
+          "BPDiaMMHG": "99.00",
+          "VitalSignDate": "2021-07-08T11:13:13.03",
+          "Diagnosis": [
+            {
+              "DiagnosisID": "F520482D-8488-4EBD-81D9-0008133E57DC",
+              "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+              "VisitID": "5e95da8b-51e8-4050-a9f8-3d25fb094a5b",
+              "DiagnosisName": "Abdominal pain",
+              "OnsetDate": "2021-07-08T11:13:13.03",
+              "DiagnosisStatus": "Active"
+            }
+          ],
+          "Medication": [
+            {
+              "MedicineID": "6c15d98d-a538-4e30-8859-251c6c806f43",
+              "VisitID": "5e95da8b-51e8-4050-a9f8-3d25fb094a5b",
+              "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+              "Medicine": "CR018 Drug2",
+              "Usage": "Oral",
+              "Dose": "2",
+              "UOM": "tab/s",
+              "Frequency": "Every two hours",
+              "Duration": "5",
+              "Precaution": "test",
+              "Quantity": "120.0000",
+              "Remarks": "Test Remarks",
+              "UpdatedBy": "C1Admin_05"
+            }
+          ],
+          "Vaccination": [
+            {
+              "VaccineID": "51D8D684-0450-48BC-9E60-004135124E51",
+              "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+              "Vaccine": "Boostrix Polio Vaccine",
+              "DateGiven": "2021-07-08T11:13:13.03",
+              "UpdatedBy": "Dr Shum Yueh Siew",
+              "Quantity": 1
+            }
+          ],
+          "ServiceOrders": [
+            {
+              "ServiceOrderID": "20000000-0000-0000-0000-000000000001",
+              "VisitID": "5e95da8b-51e8-4050-a9f8-3d25fb094a5b",
+              "ServiceOrder": "Consultation",
+              "Priority": "0"
+            }
+          ],
+          "Consumable": [
+            {
+              "ConsumableID": "ED6B7EC0-A615-4460-A292-001124F38C36",
+              "PatientProfileFK": "7340ed97-6ff5-4c7d-9557-8ff63e4bf5b7",
+              "VisitID": "5e95da8b-51e8-4050-a9f8-3d25fb094a5b",
+              "ConsumableItem": "cap/s",
+              "Quantity": 2,
+              "Remarks": "Test"
+            }
+          ]
+        }
+      ]
     }
-]
+  ],
+  "DoctorWorklist": [
+    {
+      "WorkItemID": "94B3600E-291E-42EC-B0BE-00091D7E8E71",
+      "TaskType": "Appointment",
+      "QueueNo": "24.0",
+      "VisitFK": "5e95da8b-51e8-4050-a9f8-3d25fb094a5b"
+    }
+  ]
+}
