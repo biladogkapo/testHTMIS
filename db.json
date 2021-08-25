@@ -61,7 +61,9 @@
           "IDType": "SG Pink NRIC",
           "NRIC": "S8298763D",
           "Age": "16",
-          "Gender": "M"
+          "Gender": "M",
+          "Relationship": "Sister",
+          "ContactNumber" : "09187654321"
         }
       ],
       "EResult": [
